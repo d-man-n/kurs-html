@@ -38,6 +38,10 @@ const authorContainer = document.querySelector('.catalog__description');
 for (let i = 0; i < authorLink.length; i++) {
   authorLink[i].addEventListener('click', function(ev){
     ev.preventDefault();
+    authorLink[i].classList.add('catalog__author_link_active');
+    for (let j = 0; j < authorLink.length; j++) {
+	if (i !== j) authorLink[j].classList.remove('catalog__author_link_active');
+    }
     authorContainer.innerHTML = `<img src="img/catalog_img2.jpg" alt="${authorLink[i].textContent}" class="catalog__description_img">
     <h3 class="catalog__description_title">${authorLink[i].textContent}</h3>
     <p class="catalog__description_date">Тут годы жизни.</p>

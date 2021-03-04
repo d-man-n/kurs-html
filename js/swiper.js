@@ -34,6 +34,14 @@ var mySwiper = new Swiper('.galery__swiper_container', {
   },
 })
 
+
+mySwiper.on('slideChange', function() {
+    if (mySwiper.realIndex === 0) document.querySelector('.gallery__img_larrow').disabled = true;
+    else  document.querySelector('.gallery__img_larrow').disabled = false;
+    if (mySwiper.realIndex === 12) document.querySelector('.gallery__img_rarrow').disabled = true;
+    else  document.querySelector('.gallery__img_rarrow').disabled = false;
+})
+
 if(document.documentElement.scrollWidth > 600) {
   var mySwiper2 = new Swiper('.publications__swiper', {
     loop: true,

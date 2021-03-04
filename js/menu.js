@@ -15,3 +15,13 @@ for (let i=0; i < menuLink.length; i++) {
         menuLink[i].classList.toggle('header__catalog_link_up');
     })
 }
+
+
+document.onclick = function(e){
+    if ( e.target.className.indexOf('header__catalog_') === -1 ) {
+	for (let i=0; i < menuLink.length; i++) {
+	    menuBlock[i].classList.remove('header__catalog_menu_visible');
+	    menuLink[i].classList.remove('header__catalog_link_up');
+	}
+    };
+};
