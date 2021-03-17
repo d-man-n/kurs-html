@@ -4,7 +4,7 @@ let keys = {
 
 const menuBtn = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
-const menuClose = document.querySelector('.header__menu_close')
+const menuClose = document.querySelector('.menu__close')
 
 function showMenu() {
     menu.classList.toggle('header__menu_open');

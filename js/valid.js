@@ -35,13 +35,13 @@ $(".contacts__form_list").submit(function(event) {
     );
 
     $(".contacts__form_input").val("");
-    $(".modal-bg_send").addClass('modal-bg__showed');
+    $(".modal-bg").addClass('modal-bg__showed');
     setTimeout(() => { $(".modal-bg_send").removeClass('modal-bg__showed') }, 3000);
 });
 
 
 const modalClose = document.querySelector('.modal__close');
-const modalSend = document.querySelector('.modal-bg_send');
+const modalSend = document.querySelector('.modal-bg');
 
 
 
