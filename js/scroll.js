@@ -1,5 +1,5 @@
 const scrollLink = document.querySelectorAll('.menu__link');
-const scrollBtn = document.querySelector('.hero__description_btn');
+const scrollBtn = document.querySelector('.hero__btn');
 const topOffset = document.querySelector('.top__container').offsetHeight;
 const mobMenu = document.querySelector('.header__menu');
 

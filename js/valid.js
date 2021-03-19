@@ -3,7 +3,7 @@ const im = new Inputmask("+7(999) 999-9999");
 
 im.mask(selector);
 
-new JustValidate('.contacts__form_list', {
+new JustValidate('.contacts__list', {
     rules: {
         name: {
             required: true,
@@ -25,7 +25,7 @@ new JustValidate('.contacts__form_list', {
     },
 });
 
-$(".contacts__form_list").submit(function(event) {
+$(".contacts__list").submit(function(event) {
     event.preventDefault();
 
     var $form = $(this);
@@ -34,7 +34,7 @@ $(".contacts__form_list").submit(function(event) {
         $form.serialize()
     );
 
-    $(".contacts__form_input").val("");
+    $(".contacts__input").val("");
     $(".modal-bg").addClass('modal-bg__showed');
     setTimeout(() => { $(".modal-bg_send").removeClass('modal-bg__showed') }, 3000);
 });

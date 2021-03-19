@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.galery__swiper_container', {
+var mySwiper = new Swiper('.galery__swiper-container', {
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -29,17 +29,17 @@ var mySwiper = new Swiper('.galery__swiper_container', {
   },
 
   navigation: {
-    nextEl: '.gallery__img_rarrow',
-    prevEl: '.gallery__img_larrow',
+    nextEl: '.gallery__rarrow',
+    prevEl: '.gallery__larrow',
   },
 })
 
 
 mySwiper.on('slideChange', function() {
-    if (mySwiper.realIndex === 0) document.querySelector('.gallery__img_larrow').disabled = true;
-    else  document.querySelector('.gallery__img_larrow').disabled = false;
-    if (mySwiper.realIndex === 12) document.querySelector('.gallery__img_rarrow').disabled = true;
-    else  document.querySelector('.gallery__img_rarrow').disabled = false;
+    if (mySwiper.realIndex === 0) document.querySelector('.gallery__larrow').disabled = true;
+    else  document.querySelector('.gallery__larrow').disabled = false;
+    if (mySwiper.realIndex === 12) document.querySelector('.gallery__rarrow').disabled = true;
+    else  document.querySelector('.gallery__rarrow').disabled = false;
 })
 
 if(document.documentElement.scrollWidth > 600) {
@@ -66,13 +66,13 @@ if(document.documentElement.scrollWidth > 600) {
     },
 
     navigation: {
-      nextEl: '.publications__list_rarrow',
-      prevEl: '.publications__list_larrow',
+      nextEl: '.publications__rarrow',
+      prevEl: '.publications__larrow',
     },
   })
 }
 
-var mySwiper3 = new Swiper('.project__swiper_container', {
+var mySwiper3 = new Swiper('.project__swiper-container', {
   loop: true,
 
   breakpoints: {
@@ -91,8 +91,8 @@ var mySwiper3 = new Swiper('.project__swiper_container', {
   },
 
   navigation: {
-    nextEl: '.project__swiper_larrow',
-    prevEl: '.project__swiper_rarrow',
+    nextEl: '.project__larrow',
+    prevEl: '.project__rarrow',
   },
 })
 
