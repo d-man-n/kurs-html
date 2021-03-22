@@ -57,8 +57,8 @@
                     <span class="burger__line"></span>
                 </button>
                 <a href="#" class="header__logo">
-                    <img src="img/logo-header.svg" alt="Лого">
-                    <img src="img/logo-title.svg" alt="Лого описание">
+                    <img src="img/logo.svg" alt="Лого">
+<!--                   <img src="img/logo-title.svg" alt="Лого описание"-->
                 </a>
                 <nav class="header__menu menu">
 	            <button class="menu__close close">
@@ -88,11 +88,23 @@
                             <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                     </ul>
-	            <button class="btn-reset header__login header__login_mob">Войти</button>
+	            <button class="btn-reset header__login header__login_mob">
+                	<svg class="header__login-img" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+			    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+			</svg>
+	        	Войти
+	            </button>
                 </nav>
-                <button class="btn-reset header__login">Войти</button>
+                <button class="btn-reset header__login">
+            	    <svg class="header__login-img" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+		    </svg>
+            	    Войти
+            	</button>
                 <button class="btn-reset search__btn search__btn_mob"></button>
-                <input name="search" type="text" class="search__field search__field_mob" placeholder="Поиск по сайту">
+                <form method="post">
+            	    <input name="search" type="text" class="search__field search__field_mob" placeholder="Поиск по сайту">
+                </form>
             </div>
         </div>
         <div class="header__submenu menu2">
@@ -254,10 +266,10 @@
                         </div>
                     </li>
                 </ul>
-                <div class="header__search search">
-                    <input name="search_desc" type="text" class="search__field search__field_desc" placeholder="Поиск по сайту">
-                    <button class="btn-reset search__btn"></button>
-                </div>
+            	<form method="post" class="header__search search">
+            	    <input name="search_desc" type="text" class="search__field search__field_desc" placeholder="Поиск по сайту">
+            	    <button class="btn-reset search__btn"></button>
+                </form>
             </div>
         </div>
     </header>
@@ -265,7 +277,7 @@
         <div class="hero__container">
             <div class="container hero__description">
                 <h1 class="hero__main">Blanchard художественная галерея</h1>
-                <h2 class="hero__header">Прикоснитесь к&nbsp;прекрасному</h1>
+                <h2 class="hero__header">Прикоснитесь к&nbsp;прекрасному</h2>
                 <p class="hero__title">
                     Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
                 </p>
@@ -495,30 +507,36 @@
                         <div>
                             <div class="catalog__author author">
                                 <p class="author__item1">
-                                    <a href="#" class="author__link">Бенедетто ди Биндо Бергоньоне</a>, 
-                                    <a href="#" class="author__link">Амброджо Биссоло</a>, 
-                                    <a href="#" class="author__link">Больтраффио</a>, 
-                                    <a href="#" class="author__link">Джованни Бонсиньори</a>, 
-                                    <a href="#" class="author__link">Боттичини</a>, 
-                                    <a href="#" class="author__link">Рафаэлло Брамантино<br>Бреа</a>, 
-                                    <a href="#" class="author__link">Людовико<br>Бьяджо д’Антонио<br>Туччи</a> 
+                                    <a href="#" class="author__link">Бенедетто&nbsp;ди&nbsp;Биндо</a>
+                                    <a href="#" class="author__link">Бергоньоне,&nbsp;Амброджо</a> 
+                                    <a href="#" class="author__link">Биссоло,&nbsp;Франческо</a>,
+                                    <a href="#" class="author__link">Больтраффио,&nbsp;Джованни</a>, 
+                                    <a href="#" class="author__link">Бонсиньори,&nbsp;Франческо</a>, 
+                                    <a href="#" class="author__link">Боттичини,&nbsp;Рафаэлло</a>, 
+                                    <a href="#" class="author__link">Брамантино</a><br> 
+                                    <a href="#" class="author__link">Бреа,&nbsp;Людовико</a> 
+                                    <a href="#" class="author__link">Бьяджо&nbsp;д’Антонио&nbsp;Туччи</a>
                                 </p>
                                 <p class="author__item1">
-                                    <a href="#" class="author__link">Веккьетта Андреа</a> 
-                                    <a href="#" class="author__link">Верроккьо Доменико Гирландайо</a>
+                                    <a href="#" class="author__link">Веккьетта</a>,<br> 
+                                    <a href="#" class="author__link">Андреа&nbsp;Верроккьо</a>
+                                    <a href="#" class="author__link">Доменико&nbsp;Гирландайо</a> 
+                                    <a href="#" class="author__link">Беноццо&nbsp;Гоццоли</a> 
                                 </p>
                                 <p class="author__item2">
-                                    <a href="#" class="author__link">Беноццо Гоццоли Граначчи</a>, 
-                                    <a href="#" class="author__link">Джованни</a>
-                                    <a href="#" class="author__link">Джованни да Удине</a> 
-                                    <a href="#" class="author__link">Джованни ди Паоло</a> 
-                                    <a href="#" class="author__link">Джорджоне</a> 
+                                    <a href="#" class="author__link">Граначчи,&nbsp;Франческо</a> 
+                                    <a href="#" class="author__link">Грегорио&nbsp;ди&nbsp;Чекко</a>, 
+                                    <a href="#" class="author__link">Джованни&nbsp;да&nbsp;Удине</a> 
+                                    <a href="#" class="author__link">Джованни&nbsp;ди&nbsp;Паоло</a>, 
+                                    <a href="#" class="author__link">Джорджоне</a>
                                 </p>
                                 <p class="author__item1">
-                                    <a href="#" class="author__link">Парентино</a>, 
-                                    <a href="#" class="author__link">Бернардо Пезеллино</a> 
-                                    <a href="#" class="author__link">Пьетро Перуджино Перуцци</a>, 
-                                    <a href="#" class="author__link">Бальдассаре<br>Пизанелло Пинтуриккьо</a>
+                                    <a href="#" class="author__link">Парентино,&nbsp;Бернардо</a>, 
+                                    <a href="#" class="author__link">Пезеллино</a> 
+                                    <a href="#" class="author__link">Пьетро&nbsp;Перуджино</a>, 
+                                    <a href="#" class="author__link">Перуцци,&nbsp;Бальдассаре</a>
+                                    <a href="#" class="author__link">Пизанелло</a>,<br> 
+                                    <a href="#" class="author__link">Пинтуриккьо</a>
                                 </p>
                             </div>
                         </div>
@@ -1008,8 +1026,8 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="#" class="footer__logo">
-                <img src="img/logo-header.svg" alt="Лого">
-                <img src="img/logo-title.svg" alt="Лого описание">
+                <img src="img/logo.svg" alt="Лого">
+<!--                <img src="img/logo-title.svg" alt="Лого описание">-->
             </a>
             <ul class="footer__social social">
                 <li class="social__item">

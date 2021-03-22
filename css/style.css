@@ -327,44 +327,58 @@ img {
 
 .header__login {
     margin-left: auto;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: 8px center;
     color: #ffffff;
     height: 40px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    padding-left: 28px;
     padding-right: 0;
     cursor: pointer;
     transition: color.2s ease-in-out, background-image .1s linear;
 }
 
+.header__login-img {
+    margin-right: 5px;
+}
+
+.header__login-img path {
+    transition: fill .2s ease-in-out;
+}
+
 .header__login:hover {
-    color: #C283F3;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='%23C283F3'/%3E%3C/svg%3E%0A");
+    color: var(--color-link);
+}
+
+.header__login:hover > .header__login-img path {
+    fill: var(--color-link);
 }
 
 .header__login:focus {
     outline: 1px solid var(--color-link-active);
 }
 
-.header__login:hover {
-    color: var(--color-link);
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='%239D5CD0'/%3E%3C/svg%3E%0A");
+.header__login:active {
+    color: var(--color-link-active);
+    outline: none;
+}
+
+.header__login:active > .header__login-img path {
+    fill: var(--color-link-active);
 }
 
 .header__login_mob {
     display: none;
     margin-left: 30px;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='%23333333'/%3E%3C/svg%3E%0A");
     color: var(--color-text);
     font-weight: 700;
 }
 
+.header__login_mob .header__login-img path {
+    fill: #333333;
+}
+
 .header__menu_open {
-    left: 0;
+    left: 0 !important;
 }
 
 .header__search {
@@ -469,6 +483,7 @@ img {
 
 .menu2__list {
     display: flex;
+    margin-left: -7px;
 }
 
 .menu2__item {
@@ -476,7 +491,7 @@ img {
 }
 
 .menu2__item:not(:last-child) {
-    margin-right: 90px;
+    margin-right: 84px;
 }
 
 .menu2__btn {
@@ -546,7 +561,7 @@ img {
 }
 
 .submenu__list {
-    max-height: 300px;
+    max-height: 220px;
     width: 250px;
     overflow-x: hidden;
     padding-right: 20px;
@@ -673,6 +688,7 @@ img {
     width: 314px;
     background-color: var(--color-link);
     color: #ffffff;
+    transition: border-color .1s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -917,18 +933,24 @@ img {
     outline: 3px solid var(--color-link-active);
 }
 
-.gallery__link:hover::before,.gallery__link:active::before {
+.gallery__link::before,.gallery__link::before {
     content: '';
     position: absolute;
     width: calc(100% - 50px);
     height: calc(100% - 50px);
     top: 25px;
     left: 25px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,.4);
     background-image: url(../img/loop.svg);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.gallery__link:hover::before,.gallery__link:active::before {
+    opacity: 1;
 }
 
 .gallery__link:active::after {
