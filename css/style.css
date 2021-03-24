@@ -92,7 +92,7 @@ img {
     transition: background-color .1s ease-in-out;
 }
 
-.slider-larrow:hover, .slider-rarrow:hover {
+.slider-larrow:not([disabled]):hover, .slider-rarrow:not([disabled]):hover {
     background-color: var(--color-link);
 }
 
@@ -874,6 +874,8 @@ img {
 
 .gallery__login {
     color: var(--color-link);
+    border-bottom: none;
+    transition: border-bottom .2s ease-in-out;
 }
 
 .gallery__login:hover {
@@ -1602,6 +1604,8 @@ img {
 .project__link {
     color: var(--color-link);
     letter-spacing: 0;
+    border-bottom: none;
+    transition: border-bottom .2s ease-in-out;
 }
 
 .project__link:hover {
