@@ -58,8 +58,8 @@ img {
     line-height: 24px;
     text-align: center;
     cursor: pointer;
-    transition: background-color .2s ease-in-out;
     margin-bottom: 3px;
+    transition: background-color .2s ease-in-out;
 }
 
 .btn:hover {
@@ -1098,6 +1098,7 @@ img {
     border-bottom: 1px solid var(--color-text);
     padding-top: 37px;
     padding-bottom: 43px;
+    transition: color .2s ease-in-out;
 }
 
 .catalog__item:hover {
@@ -1156,6 +1157,7 @@ img {
     height: 50px;
     border-radius: 25px;
     background-color: #ececec;
+    transition: background-color .2s ease-in-out;
 }
 
 .ui-accordion-header-icon::before {
@@ -1168,6 +1170,7 @@ img {
     border-right: 1px solid #000000;
     border-bottom: 1px solid #000000;
     transform: rotate(45deg);
+    transition: border-right,border-bottom .2s ease-in-out;
 }
 
 .ui-accordion-header-active .ui-accordion-header-icon::before {
@@ -1186,6 +1189,8 @@ img {
     color: var(--color-text);
     font-size: 16px;
     line-height: 32px;
+    border-bottom: none;
+    transition: color,border-bottom .2s ease-in-out;
 }
 
 .author__link:hover {
@@ -1243,6 +1248,7 @@ img {
     border: 1px solid #CACACA;
     border-top: none;
     padding-top: 13px;
+    padding-bottom: 42px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1291,8 +1297,8 @@ img {
     border-bottom: 1px solid var(--color-link);
     margin-top: 85px;
     margin-left: 50px;
-    margin-bottom: 42px;
-    transition: color .2s ease-in-out;
+/*    margin-bottom: 42px;*/
+    transition: font-weight,letter-spacing .2s ease-in-out;
 }
 
 .event__link:hover {
@@ -1318,7 +1324,7 @@ img {
     margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 16px;
-    transition: color .1s ease-in-out;
+    transition: color,background-color .2s ease-in-out;
 }
 
 .events__btn:hover {
@@ -1483,7 +1489,14 @@ img {
     margin-bottom: 18px;
 }
 
-.edition__name, .edition__author-desc {
+/*.edition__name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}*/
+
+.edition__header, .edition__author-desc, .edition__author {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -1495,6 +1508,7 @@ img {
 }
 
 .edition__author  {
+    display: block;
     font-weight: 400;
 }
 
@@ -1554,16 +1568,19 @@ img {
 }
 
 .tooltip__icon {
+    position: relative;
     display: inline-block;
-    background-color: var(--color-link);
-    color: #ffffff;
+    border: 1px solid var(--color-link);
+    color: var(--color-link);
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    line-height: 16px;
-    font-weight: 400;
+    line-height: 14px;
+    font-weight: 700;
     font-size: 15px;
     text-align: center;
+    margin-left: 2px;
+    bottom: -1px;
 }
 
 .tooltip__hidden {
@@ -2137,7 +2154,7 @@ img {
         height: 27.5vw;
     }
 
-    .catalog__header {
+    .catalog__header-container {
         margin-bottom: 5px;
     }
 
@@ -2170,11 +2187,12 @@ img {
     }
 
     .event__img {
-        height: 25vh;
+        height: 23.5vh;
     }
 
     .event__description {
         padding-top: 15px;
+        padding-bottom: 49px;
     }
 
     .event__date {
@@ -2196,7 +2214,7 @@ img {
     .event__link {
         margin-top: 30px;
         margin-left: 35px;
-        margin-bottom: 49px;
+/*        margin-bottom: 49px;*/
     }
 
     .publications__container {
@@ -2238,6 +2256,10 @@ img {
 
     .project__rarrow, .project__larrow {
         top: 50px;
+    }
+
+    .project__item_project1,.project__item_project2,.project__item_project3,.project__item_project4,.project__item_project5,.project__item_project6,.project__item_project7,.project__item_project8,.project__item_project9 {
+	background-size: 55%;
     }
 
     .contacts {
@@ -2485,7 +2507,7 @@ img {
         margin: 0 auto;
     }
 
-    .edition__name, .edition__author-desc {
+    .edition__header, .edition__author-desc, .edition__author {
         line-height: 22px;
     }
 
@@ -2816,6 +2838,7 @@ img {
 
     .event__description {
         height: 483px;
+        padding-bottom: 50px;
     }
 
     .event__img {
@@ -2839,7 +2862,7 @@ img {
     .event__link {
         margin-top: 28px;
         margin-left: 28px;
-        margin-bottom: 50px;
+/*        margin-bottom: 50px;*/
     }
 
     .events__swiper-pagination {
@@ -3002,7 +3025,7 @@ img {
         margin-bottom: 16px;
     }
 
-    .edition__name, .edition__author-mob {
+    .edition__header, .edition__author-mob,.edition__author {
         font-size: 12px;
         line-height: 17px;
     }
