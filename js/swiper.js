@@ -97,7 +97,18 @@ var mySwiper3 = new Swiper('.project__swiper-container', {
 })
 
 
+
+
 if(document.documentElement.scrollWidth <= 600) {
+    document.querySelector('#events__swiper').classList.add('swiper-container');
+    document.querySelector('#events__swiper').classList.add('events__swiper');
+    document.querySelector('.event').classList.add('swiper-wrapper');
+    document.querySelector('.events__list').style.flexWrap = 'nowrap';
+    const slides = document.querySelectorAll('.event__container');
+    for (let i=0; i<slides.length; i++) {
+	slides[i].classList.add('swiper-slide');
+    }
+
   var mySwiper4 = new Swiper('.events__swiper', {
     slidesPerView: 1,
     spaceBetween: 34,
