@@ -461,6 +461,7 @@ img {
     display: none;
     width: 0;
     margin-top: 0;
+    font-size: 0;
     margin-bottom: 10px;
     transition: width .2s ease-in-out;
 }
@@ -468,6 +469,7 @@ img {
 .search__field_mob_active {
     width: 150px;
     margin-left: 10px;
+    font-size: 18px;
 }
 
 .header__submenu {
@@ -1213,18 +1215,18 @@ img {
 }
 
 .events {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
 }
 
 .events__header {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .events__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 1px;
+    margin-bottom: 4px;
 }
 
 .event__container {
@@ -1233,7 +1235,7 @@ img {
     flex-direction: column;
     width: calc(33.3% - 33.3px);
     font-size: 0;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 }
 
 .event__container:nth-child(2n), .event__container:nth-child(1) {
@@ -1248,7 +1250,7 @@ img {
     border: 1px solid #CACACA;
     border-top: none;
     padding-top: 13px;
-    padding-bottom: 42px;
+    padding-bottom: 51px;
     padding-left: 50px;
     padding-right: 16px;
     display: flex;
@@ -1268,8 +1270,8 @@ img {
 }
 
 .event__text {
-/*    padding-left: 50px;*/
-    padding-right: 40px;
+/*    padding-left: 50px;
+    padding-right: 40px;*/
     margin-bottom: 85px;
     flex-grow: 1;
 }
@@ -1385,6 +1387,7 @@ img {
 .pub-filter__item {
     margin-bottom: 14px;
     user-select: none;
+    font-size: 0;
 }
 
 .pub-filter__check {
@@ -1575,11 +1578,11 @@ img {
 }
 
 .project__title {
-    width: 70%;
+    width: 67%;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: -0.35px;
+    letter-spacing: 0px;
     margin-bottom: 22px;
 }
 
@@ -1600,6 +1603,7 @@ img {
     font-size: 15px;
     text-align: center;
     margin-left: 2px;
+    margin-right: 1px;
     bottom: -1px;
 }
 
@@ -1681,100 +1685,18 @@ img {
 }
 
 .project__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     border: 1px solid #CACACA;
     cursor: pointer;
-    transition: background-image .2s ease-in-out;
+    filter: grayscale(100%);
+    transition: filter .2s ease-in-out;
 }
 
-.project__item_project1 {
-    background-image: url(../img/project1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project1:hover {
-    background-image: url(../img/project11.png);
-}
-
-.project__item_project2 {
-    background-image: url(../img/project2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project2:hover {
-    background-image: url(../img/project21.png);
-}
-
-.project__item_project3 {
-    background-image: url(../img/project3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project3:hover {
-    background-image: url(../img/project31.png);
-}
-
-.project__item_project4 {
-    background-image: url(../img/project4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project4:hover {
-    background-image: url(../img/project41.png);
-}
-
-.project__item_project5 {
-    background-image: url(../img/project5.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project5:hover {
-    background-image: url(../img/project51.png);
-}
-
-.project__item_project6 {
-    background-image: url(../img/project6.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project6:hover {
-    background-image: url(../img/project61.png);
-}
-
-.project__item_project7 {
-    background-image: url(../img/project7.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project7:hover {
-    background-image: url(../img/project71.png);
-}
-
-.project__item_project8 {
-    background-image: url(../img/project8.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project8:hover {
-    background-image: url(../img/project81.png);
-}
-
-.project__item_project9 {
-    background-image: url(../img/project9.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project__item_project9:hover {
-    background-image: url(../img/project91.png);
+.project__item:hover {
+    filter: none;
 }
 
 .project__larrow,.project__rarrow {
@@ -2222,7 +2144,7 @@ img {
     }
 
     .event__img {
-        height: 23.5vh;
+        height: 25.2vh;
     }
 
     .event__description {
@@ -2238,9 +2160,9 @@ img {
     }
 
     .event__text {
-/*        padding-left: 33px;*/
-        padding-right: 33px; 
-        margin-bottom: 30px;   
+/*        padding-left: 33px;
+        padding-right: 33px; */
+        margin-bottom: 60px;   
     }
 
     .event__header {
@@ -2294,10 +2216,6 @@ img {
 
     .project__rarrow, .project__larrow {
         top: 50px;
-    }
-
-    .project__item_project1,.project__item_project2,.project__item_project3,.project__item_project4,.project__item_project5,.project__item_project6,.project__item_project7,.project__item_project8,.project__item_project9 {
-	background-size: 55%;
     }
 
     .contacts {
@@ -2441,11 +2359,11 @@ img {
         flex-wrap: wrap;
     }
 
-    .catalog__header_list {
+    .country__list {
         margin-top: 12px;
     }
 
-    .catalog__header_item:not(:last-child) {
+    .country__item:not(:last-child) {
         margin-right: 54px;
     }
 
@@ -2473,17 +2391,17 @@ img {
         margin-bottom: 50px;
     }
     
-    .catalog__author_list {
+    .catalog__author {
         column-count: 3;
         margin-bottom: 30px;
     }
 
     .events {
-        margin-bottom: 83px;
+        margin-bottom: 86px;
     }
 
     .events__header {
-        margin-bottom: 19px;
+        margin-bottom: 17px;
     }
     
     .event__description {
@@ -2507,7 +2425,7 @@ img {
     }
 
     .event__text {
-	margin-bottom: 63px;
+	margin-bottom: 91px;
     }
 
     .event__link {
@@ -2533,7 +2451,7 @@ img {
         margin-bottom: 15px;
     }
 
-    .pub-filter_list {
+    .pub-filter__list {
         margin-bottom: 6px;
         display: flex;
         flex-flow: wrap column;
@@ -2571,6 +2489,8 @@ img {
 
     .project__item {
         height: 106px;
+        padding-left: 27px;
+        padding-right: 27px;
     }
 
     .contacts__form {
@@ -2818,10 +2738,11 @@ img {
         padding-bottom: 36px;
     }
 
-    .author__list {
+    .catalog__author {
         column-count: 1;
         padding-top: 17px;
         width: 65%;
+        margin-bottom: -2px;
     }
 
     .ui-accordion-header-icon {
@@ -3120,7 +3041,6 @@ img {
 
     .project__item {
         height: 65px;
-        background-size: 50%;
     }
 
     .project__rarrow, .project__larrow {

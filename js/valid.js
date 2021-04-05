@@ -23,27 +23,32 @@ new JustValidate('.contacts__list', {
         name: 'Введите имя',
         phone: 'Введите номер телефона'
     },
+    
+    submitHandler: function(form) {
+        let formData = new FormData(form);
+        let xhr = new XMLHttpRequest();
+        
+/*        xhr.onreadystatechange = function() {
+    	    if (xhr.readyState === 4) {
+    		if (xhr.status === 200) {
+    		    console.log('Отправлено');
+    		}
+    	    }
+        }*/
+        
+        xhr.open('POST', 'mail.php', true);
+        xhr.send(formData);
+        
+        form.reset();
+    
+        $(".contacts__input").val("");
+        $(".modal-bg").addClass('modal-bg__showed');
+        setTimeout(() => { $(".modal-bg").removeClass('modal-bg__showed') }, 3000);
+    }
 });
-
-$(".contacts__list").submit(function(event) {
-    event.preventDefault();
-
-    var $form = $(this);
-    $.post(
-        $form.attr("action"),
-        $form.serialize()
-    );
-
-    $(".contacts__input").val("");
-    $(".modal-bg").addClass('modal-bg__showed');
-    setTimeout(() => { $(".modal-bg_send").removeClass('modal-bg__showed') }, 3000);
-});
-
 
 const modalClose = document.querySelector('.modal__close');
 const modalSend = document.querySelector('.modal-bg');
-
-
 
 modalClose.addEventListener('click', function() {
     modalSend.classList.remove('modal-bg__showed');
