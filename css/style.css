@@ -223,7 +223,7 @@ img {
 .top__container {
     display: flex;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
 .header__burger {
@@ -462,7 +462,7 @@ img {
     width: 0;
     margin-top: 0;
     font-size: 0;
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
     transition: width .2s ease-in-out;
 }
 
@@ -618,7 +618,7 @@ img {
 }
 
 .hero {
-    padding-top: 140px;
+    padding-top: 141px;
     padding-bottom: 119px;
     animation: header-bg 40s ease infinite;
 }
@@ -1215,7 +1215,7 @@ img {
 }
 
 .events {
-    margin-bottom: 82px;
+    margin-bottom: 80px;
 }
 
 .events__header {
@@ -1250,7 +1250,7 @@ img {
     border: 1px solid #CACACA;
     border-top: none;
     padding-top: 13px;
-    padding-bottom: 51px;
+    padding-bottom: 42px;
     padding-left: 50px;
     padding-right: 16px;
     display: flex;
@@ -1266,13 +1266,13 @@ img {
 /*    margin-right: 16px;*/
     letter-spacing: .1px;
     line-height: 16px;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 .event__text {
 /*    padding-left: 50px;
     padding-right: 40px;*/
-    margin-bottom: 85px;
+    margin-bottom: 117px;
     flex-grow: 1;
 }
 
@@ -1999,7 +1999,7 @@ img {
 
 @media (max-width: 1100px) {
     .header {
-        padding-top: 99px;
+        padding-top: 98px;
     }
 
     .header__login, .header__submenu {
@@ -2064,8 +2064,8 @@ img {
     }
 
     .hero {
-        padding-top: 114px;
-        padding-bottom: 112px;
+        padding-top: 116px;
+        padding-bottom: 111px;
     }
 
     .hero__header {
@@ -2133,6 +2133,10 @@ img {
 
     .author__item2 {
         break-inside: avoid;
+    }
+
+    .events {
+	margin-bottom: 82px;
     }
 
     .event__container {
@@ -2375,6 +2379,10 @@ img {
         flex-wrap: wrap;
     }
 
+    .catalog__name {
+        margin-bottom: 14px;
+    }
+    
     .catalog__title {
         margin-bottom: 20px;
     }
@@ -2388,7 +2396,7 @@ img {
     .catalog__list {
         width: 100%;
         order: 1;
-        margin-bottom: 50px;
+        margin-bottom: 48px;
     }
     
     .catalog__author {
@@ -2397,7 +2405,7 @@ img {
     }
 
     .events {
-        margin-bottom: 86px;
+        margin-bottom: 85px;
     }
 
     .events__header {
@@ -2421,11 +2429,11 @@ img {
     }
 
     .event__header {
-        margin-bottom: 3px;
+        margin-bottom: 1px;
     }
 
     .event__text {
-	margin-bottom: 91px;
+	margin-bottom: 95px;
     }
 
     .event__link {
@@ -2438,7 +2446,7 @@ img {
 
     .publications__container {
         flex-wrap: wrap;
-        padding-bottom: 55px;
+        padding-bottom: 52px;
     }
 
     .publications__header {
@@ -2510,6 +2518,10 @@ img {
     }
 }
 @media (max-width: 680px) {
+    .hero__header {
+        font-size: 65px;
+    }
+
     .publications__filter_list {
         height: 250px;
     }
@@ -2535,7 +2547,7 @@ img {
 
     .top__container {
         padding-top: 12px;
-        padding-bottom: 3px;
+        padding-bottom: 7px;
     }
 
     .header__logo {
@@ -2558,12 +2570,9 @@ img {
         margin-top: 3px;
     }
 
-    .search__field_mob {
-        font-size: 14px;
-    }
-
     .search__field_mob_active {
         width: 120px;
+        font-size: 14px;
         margin-left: 5px;
     }
 
@@ -2729,6 +2738,10 @@ img {
 
     .catalog__title {
         display: none;
+    }
+
+    .catalog__list {
+        margin-bottom: 50px;
     }
 
     .catalog__item {
