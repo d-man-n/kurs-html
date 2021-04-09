@@ -43,6 +43,11 @@ mySwiper.on('slideChange', function() {
 })
 
 if(document.documentElement.scrollWidth > 600) {
+    const publicationSlide = document.querySelectorAll('.publications__item');
+    for (let i = 0; i < publicationSlide.length; i++) {
+	publicationSlide[i].classList.add('swiper-slide');
+    }
+
   var mySwiper2 = new Swiper('.publications__swiper', {
     loop: true,
     breakpoints: {
